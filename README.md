@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Projeto Next.js com CI/CD (GitHub Actions + Vercel)
 
-## Getting Started
+## 📌 Visão Geral
+Este projeto consiste em uma **landing page desenvolvida em Next.js**, criada com o objetivo de demonstrar, na prática, a configuração de uma **pipeline completa de CI/CD** utilizando **GitHub Actions** para Integração Contínua e **Vercel** para Deploy Contínuo.
 
-First, run the development server:
+O pipeline executa automaticamente validações de código, testes, build e deploy a cada push na branch principal (`main`).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+- **Next.js**
+- **Node.js (>= 20.9.0)**
+- **GitHub Actions**
+- **Vercel**
+- **ESLint**
+
+---
+
+## 🌐 Aplicação Publicada
+🔗 **URL:** [https://SEU-PROJETO.vercel.app](https://vercel.com/renatos-projects-74401050/landing-ci-cd)
+
+> Substitua o link acima pela URL real gerada pela Vercel.
+
+---
+
+## ⚙️ Requisitos para Execução Local
+- Node.js versão **20 ou superior**
+- npm
+
+---
+
+## ▶️ Como Executar o Projeto Localmente
 
 ```bash
+# Clonar o repositório
+git clone https://github.com/Renatoxdev/landing-ci-cd/
+
+# Entrar na pasta do projeto
+cd landing-ci-cd
+
+# Instalar dependências
+npm ci
+
+# Rodar em ambiente de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em:  
+👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📜 Scripts Disponíveis
 
-## Learn More
+| Script | Descrição |
+|------|-----------|
+| `npm run lint` | Executa a análise estática de código com ESLint |
+| `npm run test` | Executa os testes automatizados |
+| `npm run build` | Gera o build de produção da aplicação |
+| `npm run dev` | Inicia o servidor de desenvolvimento |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔄 Pipeline CI/CD
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A pipeline está definida no arquivo:
 
-## Deploy on Vercel
+```
+.github/workflows/main.yml
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📌 Quando ela roda?
+- A cada **push** na branch `main`
+- A cada **pull request** para a branch `main`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🧩 Etapas da Pipeline (CI)
+1. Checkout do repositório
+2. Configuração do Node.js
+3. Instalação das dependências (`npm ci`)
+4. Execução do ESLint
+5. Execução dos testes
+6. Build da aplicação
+
+### 🚀 Deploy Contínuo (CD)
+- Após um push bem-sucedido na branch `main`
+- Deploy automático realizado na **Vercel**
+
+## ✅ Como Verificar o Funcionamento da Pipeline
+
+1. Acesse o repositório no GitHub
+2. Clique na aba **Actions**
+3. Selecione o workflow **CI/CD Pipeline**
+4. Verifique se todas as etapas foram executadas com sucesso
+
+Um status verde indica que o CI e o deploy foram concluídos corretamente.
+
+---
+
+## 🎓 Contexto Acadêmico
+Este projeto foi desenvolvido como parte de um **trabalho acadêmico**, com foco em demonstrar:
+- Boas práticas de Integração Contínua
+- Automação de deploy
+- Uso de pipelines modernas em projetos Front-end
+
+---
+
+## 📄 Licença
+Este projeto é de uso educacional.
