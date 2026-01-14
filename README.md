@@ -17,9 +17,7 @@ O pipeline executa automaticamente validações de código, testes, build e depl
 ---
 
 ## 🌐 Aplicação Publicada
-🔗 **URL:** [https://SEU-PROJETO.vercel.app](https://vercel.com/renatos-projects-74401050/landing-ci-cd)
-
-> Substitua o link acima pela URL real gerada pela Vercel.
+🔗 **URL:** https://vercel.com/renatos-projects-74401050/landing-ci-cd
 
 ---
 
